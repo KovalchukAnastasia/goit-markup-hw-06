@@ -201,9 +201,10 @@ body {
 .header-tel-icon {
     margin-right: 10px;
     fill: currentColor;
-    
- 
+
 }
+
+
 /*----------main----------*/
 .main {
     max-width: 1600px;
@@ -343,9 +344,14 @@ body {
     margin-top: 4px;
     padding-left: 40px;
     outline: transparent;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus {
+.modal-input:focus,
+.modal-input:hover {
     border-color: #2196F3;
 }
 
@@ -376,9 +382,14 @@ body {
     padding: 12px;
     outline: transparent;
    
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-.modal-commit:focus {
+.modal-commit:focus,
+.modal-commit:hover {
     border-color: #2196F3;
 }
 .modal-commit::placeholder {
@@ -391,6 +402,16 @@ body {
 }
 .icon {
     position: relative;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+}
+.icon:focus,
+.icon:hover {
+    fill: #2196F3;
 }
 .icon-modal-input {
     position: absolute;
@@ -414,11 +435,21 @@ body {
     display: flex;
     align-items: center;
 
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .check-text a {
     color: #2196F3;
 }
+.check-text:focus,
+.check-text:hover
+ {
+    color: #2196F3;
+}
+
 .check-text::before {
     content: '';
     width: 16px;
@@ -426,6 +457,21 @@ body {
     border: 1px solid rgba(33, 33, 33, 1);
     border-radius: 2px;
     margin-right: 8px;
+    outline: transparent;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-text:hover::before {
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 1px solid #2196F3;;
+    border-radius: 2px;
+    margin-right: 8px;
+    outline: transparent;
 }
 
 .input-check:checked + .check-text::before {
@@ -436,10 +482,12 @@ body {
     border: none;
 }
 
+
 .modal-field-check {
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
 /*----------pproperties----------*/
 .properties {
     padding-top: var(--typical-padding);
@@ -913,9 +961,12 @@ body {
 .footer-soc {
     margin-right: 93px;
 }
-/* .footer-form {
-    padding-right: 0;
-} */
+.footer-form {
+    margin: 0;
+    margin-left: auto;
+    
+   
+}
 .footer-input {
     width: 358px;
     height: 50px;
@@ -938,6 +989,7 @@ body {
 }
 .footer-form-input {
     display: flex;
+    
     /* align-items: center;
     justify-content: center; */
    
