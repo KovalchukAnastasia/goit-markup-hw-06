@@ -281,7 +281,9 @@ body {
     
     z-index: 1;
 }
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden .footer-input
+
+{
     transform: translate(-50%, -50%) scale(0);
 }
 
@@ -295,6 +297,7 @@ body {
     background-color: #ffffff;
     border-radius: 5px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px;
 }
 
 .modal-btn {
@@ -314,7 +317,129 @@ body {
     cursor: pointer;
     
 }
+.icon-close:hover {
+    fill: #2196F3;
 
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    padding-left: 40px;
+    outline: transparent;
+}
+
+.modal-input:focus {
+    border-color: #2196F3;
+}
+
+.modal-input:focus + .icon-modal-input {
+    fill: #2196F3;
+}
+
+.modal-label {
+    
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+    text-align: left;
+    
+}
+
+.modal-commit {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    background-color: transparent;
+    resize: none;
+    margin-top: 4px;
+    padding: 12px;
+    outline: transparent;
+   
+    
+}
+.modal-commit:focus {
+    border-color: #2196F3;
+}
+.modal-commit::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+
+}
+.icon {
+    position: relative;
+}
+.icon-modal-input {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: var(--main-title-color);
+    
+    
+}
+
+.check-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    display: flex;
+    align-items: center;
+
+}
+
+.check-text a {
+    color: #2196F3;
+}
+.check-text::before {
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 1px solid rgba(33, 33, 33, 1);
+    border-radius: 2px;
+    margin-right: 8px;
+}
+
+.input-check:checked + .check-text::before {
+    background-color: #2196F3;
+    background-image: url(../images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.modal-field-check {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 /*----------pproperties----------*/
 .properties {
     padding-top: var(--typical-padding);
@@ -784,6 +909,72 @@ body {
     fill: #FFFFFF;
     background-color: #2196F3;
 }
+
+.footer-soc {
+    margin-right: 93px;
+}
+/* .footer-form {
+    padding-right: 0;
+} */
+.footer-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    outline: transparent;
+    color: #FFFFFF;
+    padding-left: 18px;
+}
+.footer-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    /* padding-left: 18px;
+     */
+    
+}
+.footer-form-input {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+   
+}
+.footer-btn {
+   
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    cursor: pointer;
+    background-color:#2196F3;
+    min-width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    border: 0;
+    padding-right: 28px;
+    padding-left: 29px;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+}
+
+
+.icon-send {
+    margin-left: 10px;
+     
+} 
+
+
 
 
   /*----------PORTFOLIO----------*/
